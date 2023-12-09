@@ -1,0 +1,2 @@
+rm -rf INCA_libs *.vcd *.fsdb nWaveLog novas.rc verilog.log nverilog.log \
+novas_dump.log nverilog.history 
