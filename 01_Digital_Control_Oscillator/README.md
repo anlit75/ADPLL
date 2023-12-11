@@ -11,6 +11,7 @@ This folder contains the HSPICE simulation files for a Digital-Controlled Oscill
     - [Running the Simulation](#running-the-simulation)
     - [PVT Simulation](#pvt-simulation)
 - [Behavioral Model](#behavioral-model)
+- [References](#references)
 
 ## File Structure
 
@@ -28,13 +29,13 @@ This folder contains the HSPICE simulation files for a Digital-Controlled Oscill
 The architecture of the DCO is followed by [Terng-Yin Hsu, 2001](https://doi.org/10.1109/82.933795), architecture is show in Fig.1, and this DCO provide 128 different frequencies output.
 
 ### Overall structure of the DCO
-This image shows the overall structure of the DCO, including the tri-state inverters and the control logic.
-<img src="./img/dco.gif">
+This image shows the overall structure of the DCO, including the tri-state inverters and the control logic.  
+<img src="./img/dco.gif">  
 Fig.1 Structure of the cell-based digital-controlled ring oscillator.
 
 ### Detailed schematic of the DCO
-This image shows a detailed schematic of the DCO, including the individual components and their connections.
-<img src="./img/dco-schematic.png">
+This image shows a detailed schematic of the DCO, including the individual components and their connections.  
+<img src="./img/dco-schematic.png">  
 Fig.2 Schematic view of the tri-state inverter based DCO.
 
 ## Simulation Details
@@ -78,5 +79,8 @@ The behavioral model of the DCO is written in Verilog and can be found in the `b
 
 The model is based on the simulation results from the HSPICE simulation, and test all possible DCO control codes to verify the model, testbench is provided in `behavior_model/dco_test_top.sv`.
 
-The following waveform shows the simulation result of all possible DCO control codes:
+The following waveform shows the simulation result of all possible DCO control codes:  
 <img src="./behavior_model/dco_waveform.png">
+
+## References
+- Terng-Yin Hsu, Chung-Cheng Wang and Chen-Yi Lee, "Design and analysis of a portable high-speed clock generator," in IEEE Transactions on Circuits and Systems II: Analog and Digital Signal Processing, vol. 48, no. 4, pp. 367-375, April 2001, doi: 10.1109/82.933795.
