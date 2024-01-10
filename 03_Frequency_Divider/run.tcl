@@ -1,0 +1,1 @@
+ncverilog +access+r ./test_FREQ_DIV.v
