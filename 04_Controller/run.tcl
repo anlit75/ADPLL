@@ -1,0 +1,1 @@
+ncverilog +access+r ./CONTROLLER.v
